@@ -28,6 +28,14 @@ mecab_bert_usetag = KoNLPyBertTokenizer(
 print(mecab_bert_usetag.tokenize(sent_ko))
 ```
 
+```Python
+# 구글 코랩 버전
+!git clone https://github.com/lovit/huggingface_konlpy.git
+%cd huggingface_konlpy
+from huggingface_konlpy.tokenizers_konlpy.tokenizers import KoNLPyBertWordPieceTrainer
+from huggingface_konlpy.transformers_konlpy.pretrained_tokenizers import KoNLPyBertTokenizer
+```
+
 ```
 Initialize alphabet 1/1: 100%|██████████| 70964/70964 [00:00<00:00, 87827.53it/s]
 Train vocab 1/1: 100%|██████████| 70964/70964 [00:14<00:00, 4924.31it/s]
